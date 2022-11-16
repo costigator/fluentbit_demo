@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: C:\ProgramData\chocolatey\lib\kubernetes-kompose\tools\kompose.exe convert -f ../docker-compose.yml
+    kompose.version: 1.26.1 (a9d05d509)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: fluent-bit
+  name: fluent-bit
+spec:
+  ports:
+    - name: "5140"
+      port: 5140
+      targetPort: 5140
+  selector:
+    io.kompose.service: fluent-bit
+status:
+  loadBalancer: {}
