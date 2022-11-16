@@ -39,7 +39,7 @@ kafkacat -b localhost:29092 -t test
 
 ### UI
 
-- Kabana (Logstash UI): http://localhost:5601
+- Kibana (Logstash UI): http://localhost:5601
 - MinIO (Object Storage): http://localhost:9001
 
 ## Clean up
