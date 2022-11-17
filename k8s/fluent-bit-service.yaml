@@ -10,8 +10,8 @@ metadata:
   name: fluent-bit
 spec:
   ports:
-    - name: "5140"
-      port: 5140
+    - name: "5514"
+      port: 5514
       targetPort: 5140
   selector:
     io.kompose.service: fluent-bit

@@ -14,7 +14,7 @@ services:
       - "AWS_ACCESS_KEY_ID=admin"
       - "AWS_SECRET_ACCESS_KEY=password"
     ports:
-      - 5140:5140
+      - 5514:5140
 
   server:
     build: server
